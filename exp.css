@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    width: 1550px;
+    margin: 0px auto;
+}
+header{
+    padding: 20px 80px;
+    /* border: 1px solid white; */
+    /* width: 100vw; */
+    /* width: 100%; */
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.left-nav{
+    font-size: 35px;
+    line-height: 86px;
+    font-weight: bold;
+}
+.left-nav span{
+    color: #ff0077;
+}
+.link-nav a{
+    padding: 7px 13px;
+    border-radius: 3px;
+    margin-left: 10px;
+    transition: all 0.1s ease-in 0s;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.home{
+    background-color: #ff0077;
+}
+.link-trans:hover{
+    background-color: #ff0077;
+}
+.hero-section{
+    padding: 80px;
+    display: flex;
+    gap: 200px;
+    /* border: 1px solid white; */
+    /* height: 1600px; */
+}
+.hero-left{
+    height: 390px;
+    width: 600px;
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 1px solid white; */
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 0px;
+    font-size: 50px;
+    color: #ebebeb;
+}
+.profession{
+    font-size: 34px;
+}
+.description{
+    margin: 20px 0px 40px;
+    color: #ebebeb;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+}
+.button a{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff0077;
+    
+    z-index: 100;
+}
+.hireme{
+    background-color: #ff0077;
+    position: relative;
+    color: #ebebeb;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #ebebeb;
+}
+.hireme:hover{
+    /* animation: button-animate 0.3s ease 0s 1 normal forwards; */
+    font-size: 22px;
+}
+.talk{
+    background-color: transparent;
+    position: relative;
+    color: #FF0077;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #FF0077;
+}
+.hireme::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+    transition: 0.5s;
+}
+.hireme:hover::after{
+    transform: scaleX(1);
+    
+}
+.talk::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff0077;
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: -1;
+    transition: 0.5s;
+}
+.talk:hover::after{
+    transform: scaleX(1);
+}
+.talk:hover{
+    color: #ebebeb;
+    font-size: 22px;
+    /* animation: button-animate 0.3s ease 0s 1 normal forwards; */
+}
+/* .hero-right{} */
+.pic{
+    background: url("mypiclast.jpg");
+    /* transform: rotateY(180deg); */
+    width: 650px;
+    height: 500px;
+    background-size: contain;
+    position: relative;
+    bottom: 100px;
+    /* border: 1px solid white; */
+    position: relative;
+    top: 0px;
+    animation: pic 5s ease-in-out 0s infinite alternate;
+}
+@keyframes pic{
+    0%{
+        transform: scale(1.1);
+        filter: grayscale(0);
+    }
+    50%{
+        transform: scale(1.2);
+        filter: grayscale(1);
+    }
+    100%{
+        transform: scale(1.1);
+        filter: grayscale(0);
+    }
+}
+
+.icon{
+    margin-top: 60px;
+    margin-left: 10px;
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 50px;
+}
+.bx{
+    position: relative;
+    z-index: 1;
+    transform: scale(2);
+    border: 1px solid #FF0077;
+    border-radius: 50%;
+    color: #FF0077;
+    padding: 3px;
+    font-size: 12px;
+    transition: all 0.4s ease 0s;
+}
+/* .icon i{
+    position: relative;
+    z-index: 10;
+} */
+.bx::after{
+    content: "";
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background-color: #FF0077;
+    border-radius: 50%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.4s ease 0s;
+    z-index: -1;
+}
+.bx:hover::after{
+    transform: scaleX(1);
+}
+.bx:hover{
+    color: #ebebeb;
+}
+
+
